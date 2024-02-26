@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Shtraffe</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="header-navigate">
+
+
+            <div class="header-top-content">
+
+                <div class="content-wrapper">
+                    <div class="choice-town-wrapper">
+                        <button id="choiceTownWrapper">
+                            <img src="img/icons/map-point-icon.svg" alt="map-point-icon">
+                            Выбрать город
+                        </button>
+                    </div>
+                    <ul class="header-top-navigate">
+                        <li>
+                            <a class="header-link" href="#">Поиск</a>
+                        </li>
+                        <li>
+                            <a class="header-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header-login-button-wrapper">
+                        <button id="headerLoginButton">
+                            <img src="img/icons/user-icon.svg" alt="user-icon">
+                            Войти
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+            <div class="header-bottom-content">
+
+                <div class="content-wrapper">
+                    <div class="header-logo-wrapper">
+                        <div class="header-logo"></div>
+                        <p>ГАЗБУКА</p>
+                    </div>
+    
+    
+                    <ul class="header-bottom-navigate">
+                        <li>
+                            <a class="header-link" href="#">ОСАГО</a>
+                        </li>
+                        <li>
+                            <a class="header-link" href="#">КБМ</a>
+                        </li>
+                        <li>
+                            <a class="header-link" href="#">Штрафы ГИБДД</a>
+                        </li>
+                        <li>
+                            <a class="header-link" href="#">Журнал</a>
+                        </li>
+                    </ul>
+                </div>
+                
+
+            </div>
+
+
+        </nav>
+    </header>
+
+    <section class="top-info-wrapper">
+        <div class="content-wrapper">
+
+            <div class="top-info">
+                <h1>Проверить и оплатить<br>штрафы ГИБДД</h1>
+                <p>
+                    Поможем найти ближайшую ветеринарную клинику с<br>
+                    хорошими отзывами и заботливыми ветврачами
+                </p>
+            </div>
+
+            <div class="top-info-image"></div>
+
+        </div>
+        
+    </section>
+
+    <section class="check-mulcts">
+        <div class="mulcts-filter-buttons">
+            <div class="content-wrapper">
+                <button class="mulcts-filter-button _active" data-mulctsFilter="forAuto">
+                    По авто
+                </button>
+                <button class="mulcts-filter-button" data-mulctsFilter="forResolution">
+                    По постановлению
+                </button>
+                <button class="mulcts-filter-button" data-mulctsFilter="forDriver">
+                    По водителю
+                </button>
+            </div>
+        </div>
+        <div class="mulcts-find-fields">
+            <div class="content-wrapper">
+                <div class="mulcts-find-field _active" id="forAuto">
+                    <form>
+
+                        <div class="content-wrapper">
+                            <label>
+                                <p>Госномер</p>
+                                <input type="text" id="autoNumber">
+                            </label>
+                            <label>
+                                <p>Номер СТС</p>
+                                <input type="text" id="STSnumber">
+                            </label>
+                            <label>
+                                <p>Электронная почта</p>
+                                <input type="email">
+                            </label>
+                            <button id="checkMulctsButton" onclick="showAlert()">Проверить штрафы</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="mulcts-find-field" id="forResolution">
+                    По постановлению
+                </div>
+                <div class="mulcts-find-field" id="forDriver">
+                    По водителю
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section class="oficial-data-services">
+        <div class="content-wrapper">
+            <div class="oficial-data-services-image"></div>
+        </div>
+    </section>
+
+
+    <section class="varranties-block">
+        <div class="content-wrapper">
+            <div class="varranty">
+                <p class="varranty-title">Официальные источники</p>
+                <p>
+                    Только официальные <br> 
+                    источники ГИБДД, ГИС ГМП,<br> 
+                    МОС РУ, ФССП
+                </p>
+            </div>
+            <div class="varranty">
+                <p class="varranty-title">Скорость оповещения</p>
+                <p>
+                    Мы быстро получаем <br>
+                    штрафы и показываем <br>
+                    полную информацию с фото
+                </p>
+            </div>
+            <div class="varranty">
+                <p class="varranty-title">Фото штрафов</p>
+                <p>
+                    Максимум информации по <br>
+                    штрафам, включая фото и <br>
+                    место нарушения
+                </p>
+            </div>
+            <div class="varranty">
+                <p class="varranty-title">50% скидка при оплате</p>
+                <p>
+                    Вовремя оповестим о <br>
+                    штрафе, чтобы не <br>
+                    пропустить скидку
+                </p>
+            </div>
+            <div class="varranty">
+                <p class="varranty-title">Скорость оповещения</p>
+                <p>
+                    Мы быстро получаем <br>
+                    штрафы и показываем <br>
+                    полную информацию с фото
+                </p>
+            </div>
+            <div class="varranty">
+                <p class="varranty-title">Гарантия оплаты </p>
+                <p>
+                    Мы быстро получаем <br>
+                    штрафы и показываем <br>
+                    полную информацию с фото
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="mulcts-prices">
+        <div class="content-wrapper">
+            <div class="mulcts-prices-block">
+                <div class="mulcts-prices-image" id="locationImage"></div>
+                <div class="mulcts-prices-text">
+                    <p class="mulcts-prices-title">15 000 000</p>
+                    <p>сумма штрафов</p>
+                </div>
+                
+            </div>
+            <div class="mulcts-prices-block">
+                <div class="mulcts-prices-image" id="chatImage"></div>
+                <div class="mulcts-prices-text">
+                    <p class="mulcts-prices-title">234 422</p>
+                    <p>штрафов</p>
+                </div>
+            </div>
+            <div class="mulcts-prices-block">
+                <div class="mulcts-prices-image" id="squareEditImage"></div>
+                <div class="mulcts-prices-text">
+                    <p class="mulcts-prices-title">540</p>
+                    <p>средний штраф</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="finded-mulcts">
+        <div class="content-wrapper">
+            <h2>Найденные штрафы</h2>
+            <ul class="finded-mulcts-list">
+                <li class="finded-mulcts-list-header">
+                    <p>Ф.И.О</p>
+                    <p>Дата рождения</p>
+                    <p>Серия и номер В.У.</p>
+                    <p>КБМ</p>
+                    <p>Время проверки</p>
+                </li>
+                <li>
+                    <p>***шков Н. П.</p>
+                    <p>18.03.****</p>
+                    <p>05** 601027</p>
+                    <p>0.68</p>
+                    <p>14:12</p>
+                </li>
+                <li>
+                    <p>******никова Е. А.</p>
+                    <p>05.04.****</p>
+                    <p>13** 829833</p>
+                    <p>1.17</p>
+                    <p>14:10</p>
+                </li>
+                <li>
+                    <p>****стиев В. С.</p>
+                    <p>02.03.****</p>
+                    <p>23** 777836</p>
+                    <p>0.57</p>
+                    <p>14:09</p>
+                </li>
+                <li>
+                    <p>***рина Е. А.</p>
+                    <p> 05.04.****</p>
+                    <p>13** 829833</p>
+                    <p>0.91</p>
+                    <p>14:09</p>
+                </li>
+                <li>
+                    <p>**йко А. В.</p>
+                    <p>05.10.****</p>
+                    <p>20** 441851</p>
+                    <p>1.17</p>
+                    <p>14:09</p>
+                </li>
+            </ul>
+            <div class="finded-mulcts-left-arrow"></div>
+        </div>
+    </section>
+
+    <section class="check-mulcts" id="bottom-check-mulcts">
+        <div class="mulcts-find-fields">
+            <div class="content-wrapper">
+                <div class="mulcts-find-field _active">
+                    <form>
+
+                        <div class="content-wrapper">
+                            <label>
+                                <p>Госномер</p>
+                                <input type="text" id="autoNumber">
+                            </label>
+                            <label>
+                                <p>Номер СТС</p>
+                                <input type="text" id="STSnumber">
+                            </label>
+                            <label>
+                                <p>Электронная почта</p>
+                                <input type="email">
+                            </label>
+                            <button id="checkMulctsButton">Проверить штрафы</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section class="osago-ordered">
+        <div class="content-wrapper"></div>
+    </section>
+
+
+
+    <!-- <section class="osago-calc-tutorial">
+        <h2>Как рассчитать стоимость ОСАГО на калькуляторе</h2>
+
+        <p>
+            Чтобы узнать, сколько стоит страховка на машину в 2022 году,
+            необходимо воспользоваться калькулятором ОСАГО, который рассчитает
+            стоимость полиса на основе введенных данных о ТС и водителе.
+            Стоимость полиса ОСАГО определяется по формуле:
+        </p>
+        
+        <h3>Стоимость ОСАГО = ТБ * КТ * КБМ * КВС * КО * КМ * КС</h3>
+
+        <p>
+            Где ТБ - базовый тариф, который устанавливается страховой 
+            компанией и может варьироваться от 2224 руб. до 5980 руб., 
+            остальные параметры описаны ниже.
+        </p>
+
+
+        <p>Покупая полис ОСАГО в Сравни вы получаете:</p>
+        <ul class="osago-pluses-list">
+            <li>
+                <div class="osago-pluses-image"></div>
+                <p>Минимальная стоимость:</p>
+                <p>от 24756 Р</p>
+            </li>
+            <li>
+                <div class="osago-pluses-image"></div>
+                <p>Переплата за полис:</p>
+                <p>0%</p>
+            </li>
+            <li>
+                <div class="osago-pluses-image"></div>
+                <p>Максимальная выплата: </p>
+                <p>500 000 Р</p>
+            </li>
+            <li>
+                <div class="osago-pluses-image"></div>
+                <p>Базовый тариф: </p>
+                <p>2224 - 5980 Р</p>
+            </li>
+        </ul>
+
+
+        <h2>Пример расчета страховки на машину</h2>
+        <ul class="car-insurance-calc">
+            <li>
+                <p>Параметр</p>
+                <p>Значение, руб.</p>
+                <p>Описание</p>
+            </li>
+            <li>
+                <p>Базовая ставка</p>
+                <p>2224 - 5980</p>
+                <p>Легковые автомобили ("В", "ВЕ")</p>
+            </li>
+            <li>
+                <p>Территориальный коэффициент</p>
+                <p>Х1.9</p>
+                <p>Москва</p>
+            </li>
+            <li>
+                <p>Мощность двигателя</p>
+                <p>Х1.2</p>
+                <p>От 101 до 120 л/с</p>
+            </li>
+            <li>
+                <p>КБМ</p>
+                <p>1,17</p>
+                <p>Страхование впервые (класс 3, КБМ 1,17)</p>
+            </li>
+        </ul>
+    </section> -->
+
+
+
+    <section class="osago-calc-tutorial"></section>
+
+
+    <section class="expired-mulct"></section>
+
+
+    <section class="asked-questions">
+        <h2>Часто задаваемые вопросы при расчёте стоимости ОСАГО на калькуляторе онлайн</h2>
+
+        <div class="question">
+            <h3>
+                Почему стоимость страховок отличается? Цены ведь во всех странах одинаковые
+                <div class="question-arrow"></div>
+            </h3>
+            <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nesciunt accusamus consequatur numquam quia doloribus incidunt molestias quae amet iure aperiam, rerum corporis aliquid. Dolorum reprehenderit soluta odio ad quia.</p>
+        </div>
+        <div class="question">
+            <h3>Зависит ли цена полиса от размера страховой компании?</h3>
+            <p class="answer"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi architecto hic dicta assumenda ad, omnis natus similique maxime quos quisquam quibusdam qui iusto harum nobis culpa nihil, vitae minus dolorum!</p>
+        </div>
+        <div class="question">
+            <h3>Как понять, что полисы ОСАГО на сайте настоящие?</h3>
+            <p class="answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A rerum quas dignissimos molestias similique, ad alias suscipit! Voluptatem, similique neque eius autem cupiditate a necessitatibus praesentium soluta aspernatur nostrum temporibus!</p>
+        </div>
+        <div class="question">
+            <h3>Как получить купленный полис ОСАГО</h3>
+            <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ipsam dicta dolor doloribus animi laboriosam autem fuga molestias, repudiandae aliquam nemo accusantium qui molestiae doloremque ab explicabo, perferendis unde quasi.</p>
+        </div>
+        <div class="question">
+            <h3>Как понять, что вы не накручиваете цены?</h3>
+            <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officia consectetur, libero asperiores minima numquam reiciendis doloremque aspernatur iusto eos! Omnis vel dolores autem? Excepturi odit dolore in tempore magni.</p>
+        </div>
+        <div class="question">
+            <h3>Что вы делаете, чтобы защитить данные клиентов?</h3>
+            <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem dolores, maiores repellat perferendis iste adipisci magnam officia accusamus, reprehenderit tenetur ab animi quam et aut, enim sequi nostrum debitis!</p>
+        </div>
+        <div class="question">
+            <h3>Учитываете ли вы историю вождения при расчёте ОСАГО?</h3>
+            <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem dolores, maiores repellat perferendis iste adipisci magnam officia accusamus, reprehenderit tenetur ab animi quam et aut, enim sequi nostrum debitis!</p>
+        </div>
+
+    </section>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
